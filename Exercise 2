@@ -1,0 +1,37 @@
+import math
+class Sphere : 
+    
+    def __init__(self,Radius):
+        self.Radius = Radius
+        
+    def diameter(self):
+        R = self.Radius 
+        
+        R = int(input("Please insert the Radius for diameter :"))
+        diameter = 2 * R
+        print("The Radius of diameter : ",diameter)   
+        
+    def surfaceArea(self):
+        #A = 4 n r kuasa 2
+        R = self.Radius 
+        
+        R = int(input("Please insert the Radius for suraface Area :"))
+        surfaceArea = 4 * math.pi * R*R
+        print("The Radius of surface area : ",surfaceArea)
+    def volume(self):
+        #v=4 per 3 n r kuasa 3
+        R = self.Radius 
+        
+        R = int(input("Please insert the Radius for suraface Area :"))
+        volume = 4/3 * math.pi * R*R*R
+        print("The Radius of volume : ",volume)
+        
+Sphere1 = Sphere(0)
+
+Sphere1.diameter()
+print()
+Sphere1.surfaceArea()
+print()
+Sphere1.volume()
+                
+
