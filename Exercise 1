@@ -1,0 +1,83 @@
+
+def Menu():
+    
+    Name =str(input("Please insert Username : "))
+    print("Choose Subcription Plan : ")
+    print("1 for Basic")
+    print("2 for Premium")
+    print("3 for Pro")
+    
+    (Name)
+
+
+'''def CalculatesDiscount(Basic,Premium,Pro):
+    #Basic fee is $10.00
+    #Premium $20.00 discount 10%
+    #Pro $30.00 discount 15%
+    
+    Premium = 20.00 * 10/100
+    Pro = 30.00 * 15/100
+    
+    print(CalculatesDiscount)'''
+    
+def Basic(price):
+    
+    discount = 1
+    fee = 10.00
+    
+    price = int(input("Please Enter The Price : "))
+    
+    calculate = price * fee * discount
+    
+    print("The total of discount is : ", calculate)
+     
+
+    
+def Premium(price):
+    
+    discount = 10/100 
+    fee = 20.00
+    
+    price = int(input("Please Enter The Price : "))
+    
+    calculate = price * fee * discount
+    print("The total of discount is : ", calculate)
+    
+
+    
+def Pro(price):
+    
+    discount = 15/100 
+    fee = 30.00
+    
+    price = int(input("Please Enter The Price : "))  
+    
+    calculate = price * fee * discount
+    print("The total of discount is : ", calculate)
+    
+
+    
+def Input(number):
+
+    if number == 1:
+       Basic(0)
+       
+    elif number == 2:
+       Premium(0)
+  
+    elif number ==3:
+       Pro(0)
+    
+    else :
+       print("Sorry not available")
+       
+ 
+
+(Menu())
+number_subs = int(input("Please insert the number : "))
+Input(number_subs)
+
+
+
+
+
