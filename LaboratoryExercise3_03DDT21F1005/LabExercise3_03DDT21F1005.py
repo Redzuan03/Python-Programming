@@ -1,0 +1,102 @@
+# -*- coding: utf-8 -*-
+"""
+Name : Muhammad Redzuan Bin Parsikun
+Matrix.No : 03DDT21F1005
+Class : DDT4A
+Title : Lab Exersice 3
+"""
+
+write_file = open("webinar.txt", "w") #for create the object with write put the word in write_file.write
+write_file.write("Selamat sejahtera dan salam Malaysia Madani buat seluruh warga PolyCC.\n")
+
+write_file.write("\nJemputan menghadiri\n")
+write_file.write("WEBINAR MALAYSIAN POLYTECHNIC & COLLEGE COMMUNITY SUSTAINABILITY AWARD 2023 (MPCCSustAWARD 2023) SIRI 2\n")
+
+write_file.write("\nPlatform WEBEX : shorturl.at/BCFU8\n")
+write_file.write("Tarikh : 12 April 2023 \n")
+write_file.write("Masa   : 9.45pg - 1 ptg\n")
+write_file.write("Tema   : Environmental Sustainability : Challenges & Solution for Better Future\n\n")
+
+
+write_file.write("\n*Penyertaan adalah Percuma*\n")
+write_file.write("*Sijil digital disediakan untuk semua peserta*\n")
+write_file.write("*Rujuk poster untuk maklumat lengkap\n")
+write_file.write("\n---------------------------------------------------------------------------------------------------------")
+write_file.close()
+
+#write the method/function of fileWebinar
+def fileWebinar():
+    #if user put the correct value, it will stop loop 'break' and go another method
+    while True:
+        
+        #do a exception handling
+        try:
+              
+            file_webinar = open("webinar.txt","r")
+            
+            #To try exception handling FileNotFoundError for webinar.txt
+            'file_webinar = open("webina.txt","r")'
+            print(file_webinar.read(1000))
+            file_webinar.close()
+            break 
+            
+        #occur when file webinar.txt are not defined only
+        except FileNotFoundError:
+            print("Error: the file of 'webinar.txt' is not found.")
+            break
+
+#write the method/function of show
+def show():
+     #do a infinite loop if user wrong put the value needed , it will back 'continue' to put the value at the user input which is name and attendans
+     #if user put the correct value, it will stop loop 'break' and go another method
+     while True:
+       
+                name = str(input("Sila Masukkan Nama Anda : "))#Enter the name by userinput
+                 
+                attendans = str(input("Sila Sahkan Kehadiran Anda . Jawapan : Hadir / Tidak Hadir \n"))#Enter the attendans by userinput
+               
+                # do a condition for attendans if, elif, else
+                if attendans == "Hadir":
+                   write_file=open("Answer.txt","w")
+                   write_file.write("-----------------------------------------Pengesahan Kehadiran--------------------------------------------\n")
+                   write_file.write("Nama : "+ name)
+                   write_file.write("\nStatus : "+ attendans)
+                   write_file.close()
+                   break
+               
+                elif attendans == "Tidak Hadir":
+                   write_file=open("Answer.txt","w")
+                   write_file.write("-----------------------------------------Pengesahan Kehadiran--------------------------------------------\n")
+                   write_file.write("Nama : "+ name)
+                   write_file.write("\nStatus : "+ attendans)
+                   write_file.close()
+                   break
+               
+                else:
+                   print("Wrong Input.")
+      
+#write the method/function of fileAnswer
+def fileAnswer():
+    #if user put the correct value, it will stop loop 'break' and go another method
+    while True:
+        #do a exception handling
+        try: 
+           
+            file_answer=open("Answer.txt","r")
+            
+            #To try exception handling FileNotFoundError for Answers.txt
+            'file_answer = open("Answe.txt","r")'
+            print(file_answer.read(1000))
+            file_answer.close()
+            break
+        
+        #occur when file webinar.txt are not defined only
+        except FileNotFoundError:
+            print("Error: the file of 'Answer.txt' is not found.")
+            break
+        
+#display the method/function at the output
+fileWebinar()
+show()
+fileAnswer()
+                
