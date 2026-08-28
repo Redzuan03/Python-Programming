@@ -1,0 +1,11 @@
+******Order Time******
+Date : 2023-04-06
+Time : 12:30:16
+Day : Thursday
+
+*****CUSTOMER DETAIL*****
+Name : aa
+IC  : 12
+Address : ee,22,ee,ee
+PhonNum : 12
+Email : kontol@gmail.com

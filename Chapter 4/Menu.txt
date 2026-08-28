@@ -1,0 +1,15 @@
+++----------------FOOD MENU------------------++
++ CODE   MENU                    PRICE +
++ 1.   Burger Set                 (RM 11.00) +
++ 2.   Pizza Set                  (RM 11.00) +
++ 3.   Spaghetti Bolognese Set    (RM 12.00) +
++ 4.   Spaghetti Aglio Set        (RM 13.00) +
+ 
+++----------------BEVERAGE MENU------------------++
++ CODE   MENU                    PRICE +
++ 1.    Coca Cola                  *  +
++ 2.    Pepsi                      *  +
++ 3.    Fanta Strawberry           *  +
++ 4.    Fanta Orange               *  +
++ *Included in the Food Set           +
+++-----------------------------------++
